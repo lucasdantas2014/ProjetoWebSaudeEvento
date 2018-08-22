@@ -1,0 +1,53 @@
+ #mainEvento{
+    background-color:rgba(27,119,255,0.04);
+  }
+  #nomeEvento{
+    text-align: center;
+    grid-area: 3/5/3/7;
+    
+  }
+
+  .conteudo{
+    text-align: center;
+  
+    grid-area: 3/1/7/7;
+    
+  }
+  
+  .boxFlex{
+    display: inline;
+    background-color: rgba(29,161,163,0.1); 
+    width: 100%;
+    border: 1px solid rgba(29,161,163,0.7); 
+
+    
+  }
+
+  .boxFlex li{
+    display: inline;
+    margin: 5px 10px;
+  }
+  
+h4{
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,0.3);
+    font-family: URW, Chancery L, Brush Script Std, cursive;
+    font-weight: 900;
+    color: rgba(17,166,156,1);
+    box-shadow: 5px 5px 5px  rgba(0,0,255,0.1);
+    font-size: 30px;
+    text-align: center;
+}
+  h3{
+    margin: 5px;
+    color: rgba(17,166,156,1);
+
+  }
+
+  #btInscricao{
+    text-decoration: none;
+    background-color: rgba(255,255,255,0);
+    color: rgba(17,166,156,1);
+    border: 1px solid rgba(17,166,156,1);
+    height: 30px;
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>+Saúde Eventos - Cadastro de Evento</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastroEvento.css">
+
+
+</head>
+
+
+<body>
+  <header class="topo">+ SAUDE EVENTOS </header>
+  <nav>
+    <a type="button" id="btLogin" href="index.html" >Inicio</a>
+    <a type="button" id="btLogin" href="login.html" >Login</a>
+    <a type="button" id="btLogin" href="inscricao.html">Inscrição</a>
+  </nav>
+
+  <div id="main">
+  <form method="POST" action="index.html">
+
+      <!--Primeira linha de delimitação - Dados do Evento-->
+      <h1 id ="tituloPrincipal">Cadastro de Eventos</h1>
+      
+      <!--SECAO DEDICADA AS INFORMACOES DO(S) ORGANIZADORE(S) D EVENTO-->
+      <section id ="dadosEquipe">
+          <h4  id="subTituloDEQ"  class="subTituloCE">Dados do organizador/equipe</h4>
+          <ul>
+              <li class="especial">Nome do organizador ou organização: <input id="nomeOrganizador" class="inputText" type="text"></li>
+              <br>
+            
+              <li>Contatos: </li>
+              <li>Telefone 1: <input id="telefone1" type="tel"/></li>
+              <li>Telefone 2: <input id="telefone2" type="tel"/></li>
+
+              <li class="especial">Email: <input id="email" class="inputText" type="email"/></li>
+            </ul>
+        </section>
+      
+
+        <!--sECAO DEDICADA AS INFORMAÇÕES DO EVENTO-->
+         <section id = "dadosEvento" >
+             
+             <!--SUB TITULO - DADOS DO EVENTO       -->
+          <h4  id="subTituloDEV" class="subTituloCE">Dados do Evento</h4>
+      
+        
+          <ul>
+            <li class="especial">Nome do Evento: <input type="text" id="nome" class="inputText" placeholder="Nome do Evento"></li> 
+            <li>Tipo de Evento:
+                
+              <select>
+                <option>Congresso</option>
+                <option>Palestra</option>
+                <option>Festival</option>
+                <option>Torneio</option>
+                <option>Campeonato</option>
+                <option>Corrida</option>
+                <option>Maratona</option>
+                <option>----->></option>
+              </select>
+                
+            Outro: <input id="outro" type="text"/></li>
+
+            <li>Data:
+                De <input id="dataInicio" type="datetime-local"/></li>
+                <li>até - <input id="dataFinal" type="datetime-local"/></li>
+                <li>Limite de Vaga: <input id="limite" type="number"/></li>
+
+          </ul>
+          </section>
+
+          <!--SEÇÃO DEDICADA A DESCICAO DO LOCAL DO EVENTO-->
+          <section id="endereco">
+            <h4 id="subTituloEND"  class="subTituloCE" >Endereço</h4>
+            <ul>
+              <li>Rua: <input id="rua" type="text"/></li>
+              <li>Numero: <input id="numeroLocal" type="text"/></li>
+              <li>Complemento: <input id="complemento" type="text"/></li>
+              <li>Bairro: <input id = "bairro" type="text"/></li>
+              <li>Cidade: <input id="cidade" type="text"/></li>
+              <li>Estado: <input id="estado" type="text"/>
+            </ul>
+          </section>
+
+
+        <!--PARTE FINAL DO CADASTRO - DESCRIÇÃO E BOTOES DE CADASTRO E LIMPAR CADASTRO-->
+        <section id="finalCadastro">
+          
+            <h5 class="subTituloCE">Descrição do Evento:</h5>
+          <textarea id="descricao" placeholder="  Digite aqui uma breve descricao do evento e informações adicionais que julgar importante."></textarea>
+          <input id="btCadastrar" class="botaoCE" type="submit" name ="Cadastrar" />
+          <input id="btLimparr" class="botaoCE" type="reset" name="Cadastrar" />
+
+    <!--        FECHA DO A SECAO FINAL DO CADASTRO-->
+      </section>
+<!--      FECHANDO O FOMULARIO-->
+  </form>
+    
+<!--  Fechando DIV MAIN-->
+  </div>
+    
+  </body>
+</html>

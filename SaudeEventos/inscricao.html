@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>+Saúde Eventos - Inscrição</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      #main{
+             background-color: rgba(29,161,163,0.1); 
+        }
+
+        li{
+            display: inline;
+            list-style: none;
+        }
+        div{
+/*            background-color: rgba(255,244,62,0.2);*/
+            align-self: left;   
+            text-align: left;
+            position: relative;
+
+            
+        }
+        section{
+/*
+            margin-right: 10%;
+            margin-left: 10%;
+*/  
+            border-bottom: 2px solid rgba(29,161,163,1);
+            align-self: left;
+            font-size: 20px;
+            padding-left: 15%;
+            padding-right: 15%;
+            }
+        section input{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            margin: 10px;
+            border: 3px solid rgba(17,166,156,0.6);
+            border-radius: 10%;
+        }
+        .subTituloCE{
+            background-color: rgba(255,255,255,0.3);
+            font-weight: 900;
+            color: rgba(17,166,156,1);
+            box-shadow: 5px 5px 5px  rgba(0,0,255,0.1);
+            font-size: 30px;
+            text-align: center;
+            font-family: URW, Chancery L, Brush Script MT, Brush Script Std, cursive, URW;
+        }
+        textarea{
+            border-radius: 5%;
+            border: 1px solid rgba(0,0,255,0.6);
+            
+            height: 100px;
+            width: 500px;
+        }
+        .topo{
+          text-shadow: 3px 3px 3px black;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header class="topo"> + SAUDE EVENTOS </header>
+  <nav>
+    <a type="button" id="btLogin" href="index.html" >Inicio</a>
+    <a type="button" id="btLogin" href="cadastroEvento.html"> Cadastro de eventos</a>
+  </nav>
+
+   <div id="main">
+  <form method="POST" action="index.html">
+
+      <!--Primeira linha de delimitação - Dados do Evento-->
+      <h1 id ="tituloPrincipal"> Inscrição nos eventos</h1>
+      
+      <!--SECAO DEDICADA AS INFORMACOES DO(S) ORGANIZADORE(S) D EVENTO-->
+      <section id ="dados">
+          
+          Nome: <input id="nome" type="text"> <br/>
+          Sobrenome: <input id="nome" type="text"> <br/>
+          Idade: <input id="nome" type="text"> <br/>
+          Telefone: <input id="telefone1" type="tel"</li> <br/>
+              <li>Email: <input id="email" type="email"</li> <br/>
+              <li>Sexo: <input type="radio" name= "sexo" value= "M"/>Masculino
+                        <input type="radio" name= "sexo" value= "M"/>Feminino</li> <br/><br/>
+              <li> Doenças que possui: <br/><br/> <input type="checkbox" name= "D" value= "d"/>Pressão alta </li> <br/>
+              <li> <input type="checkbox" name= "D" value= "d"/>Diabetes </li> <br/>
+              <li> <input type="checkbox" name= "D" value= "d"/>Depressão </li> <br/>
+              <li> <input type="checkbox" name= "D" 
+              value= "d"/>Outros </li> <br/>
+              <li> <input type="checkbox" name="D" value="d"/>Nenhuma <br/> <br/><textarea name= "teste" cols="25" rows"> Informe as outras doenças.</textarea><br/><br/></li>
+            </ul>
+
+        </section>
+
+          <section id="finalInscrição">
+          
+          <h5 class="subTituloCE"> Sugestões:</h5>
+          <textarea id="sugestao" placeholder=" Sugira algo para o evento... "></textarea>
+          <input id="btCadastrar" type="submit" name ="Cadastrar" />
+          <input id="btLimparr" type="reset" name="Cadastrar" />
+    <!--        FECHA DO A SECAO FINAL DA INSCRICAO-->
+      </section>
+<!--      FECHANDO O FOMULARIO-->
+  </form> 
+<!--  Fechando DIV MAIN-->
+  </div> 
+    
+  </body>
+</html>  

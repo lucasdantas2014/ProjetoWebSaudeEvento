@@ -1,0 +1,102 @@
+.conteiner{
+  display: grid;
+  grid-template-rows: repeat(6,auto);
+  grid-template-columns: repeat(6,1fr);
+  /* grid-template-areas: "header header header" "nav nav nav" "conteudo1 busca conteudo2" "footer footer footer"; */
+  
+}
+
+.mainHeader{
+  grid-area: 1/1/1/7;
+
+}
+.mainNav{
+  grid-area: 2/1/2/7;
+  margin-bottom: 20px;
+}
+
+.mainNav a{
+  color: white;
+}
+
+
+.mainBusca{
+  vertical-align: text-top;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: 3/2/5/6;
+  height: 100%;
+  border-left: 2px solid rgba(29, 161, 163, 1);
+  border-right: 2px solid rgba(29, 161, 163, 1);
+}
+
+.mainCont1{
+  text-align: center;
+  grid-area: 3/1/5/1;
+}
+
+
+.mainCont2{
+  text-align: center;
+  grid-area: 3/6/5/6;
+}
+
+/* Estilo do que vai ficar dentro do .mainBusca */
+.buscaConteiner{
+  margin-bottom: 20px;
+}
+
+.boxFlexConteiner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.resultadoBusca{
+  width: 30%;
+  height: 200px;
+  margin-bottom: 20px;
+  /* background-color: rgba(29, 161, 163, 0.04); */
+  background-color: rgba(255,255,255);
+  border: 1px solid rgba(29, 161, 163, 1);
+
+}
+.resultadoBusca img{
+  width: 100%;
+  height: 75%;
+  position: center;
+  size: cover;
+
+}
+.resultadoBusca p{
+  height: 25%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px;
+  margin: 0px;
+}
+
+.resultadoBusca a, a:hover, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.resultadoBusca a p{
+  text-decoration: none;
+  color: black;
+}
+
+/* Butap de Buscar */
+#btBusca{
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.subTitulo{
+  font-family: URW, Chancery L, Brush Script Std, cursive;
+  color: rgba(17,166,156,1);
+  text-align: center;
+
+}
